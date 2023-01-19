@@ -25,3 +25,6 @@ h1 {
     text-align: center;
     width: 300px;
   }
+.podium {
+    display: block;
+}
