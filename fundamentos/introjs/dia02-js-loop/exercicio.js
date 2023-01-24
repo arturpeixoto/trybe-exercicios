@@ -12,20 +12,57 @@ for (i of numbers) {
 }
 console.log('A soma dos números é:', soma)
 
-
 // 3 Calcule e imprima a média aritmética dos valores contidos no array;
 // 4 A média aritmética é o resultado da soma de todos os elementos dividido pelo número total de elementos.
-console.log('A média aritmética dos valores da array é:', soma/(numbers.length))
-
-
+media = soma/(numbers.length)
+console.log('A média aritmética dos valores da array é:', media)
 
 // 5 Com base no código que acabou de gerar, faça com que, caso o valor final seja maior que 20, imprima a mensagem: “valor maior que 20”. Caso não seja, imprima a mensagem: “valor menor ou igual a 20”;
+if (media > 20) {
+    console.log('Valor maior que 20.')
+} else {console.log('Valor menor ou igual a 20.')}
 
 // 6 Utilizando for, descubra qual o maior valor contido no array e imprima-o;
+maior = numbers[0]
+for (i of numbers) {
+    if (maior < i){
+        maior = i
+    }
+}
+console.log('O maior valor é:', maior)
+
 // 7 Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: “nenhum valor ímpar encontrado”;
+cont = 0
+console.log('São impares os números:')
+for (i of numbers) {
+    if (i % 2 ===1){
+        console.log(i)
+        cont++
+    }
+}
+console.log('O número de números impares foram:', cont)
 
 // 8 Utilizando for, descubra qual o menor valor contido no array e imprima-o;
+menor = numbers[0]
+for (i of numbers) {
+    if (menor > i){
+        menor = i
+    }
+}
+console.log('O menor valor é:', menor)
+
 
 // 9 Utilizando for, crie um array que vá de 1 até 25 e imprima o resultado;
+let nums = [] 
+for (i=1; i <= 25; i++){
+    nums.push(i)
+}
+console.log(nums)
 
 // 10 Utilizando o array que acabou de criar, imprima o resultado da divisão de cada um dos elementos por 2.
+console.log('Os seguintes números do array dividos por 2: ')
+nums2 = []
+for (i of nums){
+    nums2.push(i/2)
+}
+console.log(nums2)
