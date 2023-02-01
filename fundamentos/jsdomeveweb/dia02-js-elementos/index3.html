@@ -24,7 +24,18 @@
         </section>
     </main>
     <script>
-        
+        const elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
+        elementoOndeVoceEsta.removeChild(elementoOndeVoceEsta.firstElementChild);
+
+        //Fazendo com o for
+/*         const pai = document.getElementById('pai');
+        const todosOsFilhos = pai.childNodes;
+        for (index = 0; index <= todosOsFilhos.length; index += 1){
+            let filhoAtual = todosOsFilhos[index];
+            if (filhoAtual.id === 'elementoOndeVoceEsta'){
+                filhoAtual.removeChild(filhoAtual.firstElementChild);
+            }
+        } */
     </script>
 </body>
 </html>
