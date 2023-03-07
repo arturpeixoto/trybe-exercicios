@@ -1,0 +1,25 @@
+body {
+    margin: 5px;
+}
+
+.choices {
+    border: solid green 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.options {
+    display: flex;
+    flex-direction: column;
+}
+
+#title {
+    text-align: center;
+}
+#subtitle {
+    text-align: center;
+}
+.paragraph {
+    text-align: justify;
+    margin: 10px;
+}
